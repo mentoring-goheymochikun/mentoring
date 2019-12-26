@@ -1,0 +1,13 @@
+body {
+  width: 640px;
+  margin: 0 auto;
+  font-family: $font-family;
+
+  .wrap {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    //はみ出た部分を隠す
+    overflow: hidden;
+  }
+}
