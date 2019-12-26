@@ -1,0 +1,223 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Noto Sans JP";
+}
+body .wrap {
+  width: 640px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+li {
+  List-style-type: none;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+header {
+  width: 100%;
+  height: 59px;
+  background-color: #eb90da;
+}
+header .header-wrap {
+  width: 608px;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 15px;
+  position: relative;
+}
+header .header-wrap a.header-logo {
+  width: 78px;
+  height: 26px;
+  background-color: transparent;
+  display: inline-block;
+  margin: 0 auto;
+}
+header .header-wrap a.header-logo img {
+  width: 100%;
+  height: 100%;
+}
+header .header-wrap a.header-right {
+  width: 20px;
+  height: 22px;
+  background-color: transparent;
+  display: inline-block;
+  margin-left: auto;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+header .header-wrap a.header-right img {
+  width: 100%;
+  height: 100%;
+}
+
+#contents {
+  width: 100%;
+  height: 2000vw;
+  background-color: #ffffff;
+}
+#contents .slide {
+  width: 100%;
+  height: 290px;
+  background-color: transparent;
+}
+#contents .slide ul {
+  display: flex;
+  width: 300%;
+  overflow: hidden;
+}
+#contents .slide ul li {
+  width: 100%;
+}
+#contents .slide ul li img {
+  width: 100%;
+  height: auto;
+}
+#contents .touroku {
+  width: 100%;
+  height: 66px;
+  background-color: whitesmoke;
+  display: flex;
+}
+#contents .touroku .touroku-inner {
+  width: 608px;
+  height: 100%;
+  background-color: transparent;
+  margin: 0 auto;
+}
+#contents .touroku .touroku-inner a:first-of-type {
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  margin-right: 10px;
+  display: inline-block;
+}
+#contents .touroku .touroku-inner a:first-of-type img {
+  width: 100%;
+  height: 100%;
+}
+#contents .touroku .touroku-inner p {
+  display: inline-block;
+  width: 200px;
+}
+#contents .touroku .touroku-inner a:last-of-type {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  display: inline-block;
+  margin-left: auto;
+}
+#contents .touroku .touroku-inner a:last-of-type img {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
