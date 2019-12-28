@@ -4,6 +4,7 @@ body {
   font-family: "Noto Sans JP";
 }
 body .wrap {
+  position: relative;
   width: 640px;
   margin: 0 auto;
   padding: 0;
@@ -120,9 +121,14 @@ input, select {
 }
 
 header {
-  width: 100%;
+  width: 640px;
   height: 59px;
   background-color: #eb90da;
+  display: inline-block;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 header .header-wrap {
   width: 608px;
@@ -130,7 +136,7 @@ header .header-wrap {
   background-color: transparent;
   display: flex;
   margin: 0 auto;
-  padding-top: 15px;
+  padding-top: 20px;
   position: relative;
 }
 header .header-wrap a.header-logo {
@@ -149,7 +155,6 @@ header .header-wrap a.header-right {
   height: 22px;
   background-color: transparent;
   display: inline-block;
-  margin-left: auto;
   position: absolute;
   right: 0;
   top: 20px;
@@ -161,61 +166,416 @@ header .header-wrap a.header-right img {
 
 #contents {
   width: 100%;
-  height: 2000vw;
+  height: auto;
   background-color: #ffffff;
 }
-#contents .slide {
+
+.slide {
   width: 100%;
   height: 290px;
   background-color: transparent;
+  padding-top: 59px;
 }
-#contents .slide ul {
+.slide ul {
   display: flex;
   width: 300%;
   overflow: hidden;
 }
-#contents .slide ul li {
+.slide ul li {
   width: 100%;
 }
-#contents .slide ul li img {
+.slide ul li img {
   width: 100%;
   height: auto;
 }
-#contents .touroku {
+
+.touroku {
   width: 100%;
   height: 66px;
   background-color: whitesmoke;
   display: flex;
 }
-#contents .touroku .touroku-inner {
+.touroku .touroku-inner {
   width: 608px;
   height: 100%;
   background-color: transparent;
   margin: 0 auto;
+  position: relative;
 }
-#contents .touroku .touroku-inner a:first-of-type {
+.touroku .touroku-inner a:first-of-type {
   width: 44px;
   height: 44px;
   background-color: transparent;
   margin-right: 10px;
   display: inline-block;
 }
-#contents .touroku .touroku-inner a:first-of-type img {
+.touroku .touroku-inner a:first-of-type img {
   width: 100%;
   height: 100%;
+  margin-top: 10px;
 }
-#contents .touroku .touroku-inner p {
+.touroku .touroku-inner p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  color: #524f54;
   display: inline-block;
   width: 200px;
+  margin-bottom: 10px;
 }
-#contents .touroku .touroku-inner a:last-of-type {
+.touroku .touroku-inner a:last-of-type {
   width: 24px;
   height: 24px;
   background-color: transparent;
-  display: inline-block;
   margin-left: auto;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: inline-block;
+  margin-top: -12px;
 }
-#contents .touroku .touroku-inner a:last-of-type img {
+.touroku .touroku-inner a:last-of-type img {
+  width: 100%;
+  height: 100%;
+}
+
+#uranai {
+  width: 100%;
+  height: 170px;
+  background-color: #ffffff;
+  opacity: 0;
+}
+#uranai .uranai-inner {
+  width: 608px;
+  height: 100%;
+  background-color: #ffffff;
+}
+#uranai .uranai-inner p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  color: #524f54;
+}
+#uranai .uranai-inner .uranai-contents {
+  width: 943px;
+  height: 114px;
+  background-color: #ffffff;
+  overflow-x: auto;
+  display: flex;
+}
+#uranai .uranai-inner .uranai-contents a.uranaishi {
+  width: 70px;
+  height: 114px;
+  background-color: #ffffff;
+  margin-right: 5px;
+}
+#uranai .uranai-inner .uranai-contents a.uranaishi:last-of-type {
+  margin-right: 0;
+}
+#uranai .uranai-inner .uranai-contents a.uranaishi img {
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 35px;
+}
+#uranai .uranai-inner .uranai-contents a.uranaishi p {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
+  color: #524f54;
+  margin-top: 3px;
+}
+#uranai .uranai-inner .uranai-contents a.uranaishi .star {
+  width: 70px;
+  height: 19px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+#uranai .uranai-inner .uranai-contents a.uranaishi .star img {
+  width: 11px;
+  height: 10px;
+  background-color: transparent;
+  margin-right: 2px;
+}
+#uranai .uranai-inner .uranai-contents a.uranaishi .star p {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
+  color: #524f54;
+}
+
+#category {
+  width: 100%;
+  height: 628px;
+  background-color: transparent;
+}
+#category .category-inner {
+  width: 620px;
+  height: auto;
+  background-color: transparent;
+}
+#category .category-inner p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  color: #524f54;
+}
+#category .category-inner .img-top {
+  width: 100%;
+  height: 144px;
+  background-color: transparent;
+  position: relative;
+}
+#category .category-inner .img-top img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+#category .category-inner .img-top p:first-of-type {
+  width: 84px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: white;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -42px;
+}
+#category .category-inner .img-top p:last-of-type {
+  width: 284px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin-left: -142px;
+}
+#category .category-inner .img-bottom {
+  width: 100%;
+  height: 412px;
+  background-color: transparent;
+}
+#category .category-inner .img-bottom .two-img {
+  display: flex;
+}
+#category .category-inner .img-bottom .two-img .hukuen {
+  width: 304px;
+  height: 91px;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-right: auto;
+  position: relative;
+}
+#category .category-inner .img-bottom .two-img .hukuen:last-of-type {
+  margin-right: 0;
+}
+#category .category-inner .img-bottom .two-img .hukuen img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+#category .category-inner .img-bottom .two-img .hukuen p {
+  width: 42px;
+  height: 20px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -10px;
+  margin-left: -21px;
+}
+
+#hurin {
+  width: 100%;
+  height: 670px;
+  background-color: transparent;
+}
+#hurin .hurin-inner {
+  width: 608px;
+  height: 100%;
+  background-color: transparent;
+}
+#hurin .hurin-inner p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  color: #524f54;
+}
+#hurin .hurin-inner .hurin-contents a.hurin {
+  width: 100%;
+  height: 172px;
+  background-color: transparent;
+  display: inline-block;
+  border-bottom: 1px solid #524f54;
+  margin-top: 20px;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-top {
+  width: 100%;
+  height: 47px;
+  background-color: transparent;
+  display: flex;
+  position: relative;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-top img {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  border-radius: 30px;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-top .name {
+  width: 243px;
+  height: 28px;
+  background-color: transparent;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-top .name p.name-p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: #524f54;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-top .name .hurin-star {
+  width: 100%;
+  height: 11px;
+  background-color: transparent;
+  display: flex;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-top .name .hurin-star img {
+  width: 11px;
+  height: 11px;
+  margin-right: 3px;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-top .name .hurin-star p {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
+  color: #524f54;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-top p.shurui {
+  width: 85px;
+  height: 20px;
+  background-color: #eb90da;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 20px;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 3px;
+  position: absolute;
+  right: 0;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-bottom {
+  width: 100%;
+  height: 164px;
+  background-color: transparent;
+  display: flex;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-bottom .description {
+  width: 367px;
+  height: 100%;
+  background-color: transparent;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-bottom .description p {
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #524f54;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-bottom .description .price {
+  display: flex;
+  margin-top: 20px;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-bottom .description .price img {
+  width: 25px;
+  height: 24px;
+  margin-right: 5px;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-bottom .description .price p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #eb90da;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-bottom .hurin-img {
+  width: 241px;
+  height: 100%;
+  background-color: transparent;
+  position: relative;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-bottom .hurin-img img {
+  width: 135px;
+  height: 99px;
+  position: absolute;
+  right: 0;
+  border: 10px;
+  border-radius: 20px;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-bottom .hurin-img .heart {
+  width: 52px;
+  height: 52px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  position: absolute;
+  top: 50px;
+  right: -10px;
+}
+#hurin .hurin-inner .hurin-contents a.hurin .hurin-bottom .hurin-img .heart img {
+  width: 40px;
+  height: 40px;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+#hurin .hurin-inner .hurin-more-background {
+  width: 100%;
+}
+#hurin .hurin-inner .hurin-more-background a.hurin-more {
+  width: 498px;
+  height: 44px;
+  background-color: whitesmoke;
+  margin: 30px 55px 0;
+  border-radius: 50px;
+  display: inline-block;
+  text-align: center;
+}
+#hurin .hurin-inner .hurin-more-background a.hurin-more .more {
+  width: 200px;
+  padding-top: 15px;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+}
+#hurin .hurin-inner .hurin-more-background a.hurin-more .more p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #524f54;
+  width: 200px;
+  margin: 0 auto;
+}
+#hurin .hurin-inner .hurin-more-background a.hurin-more .more img {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+a.line-fixed {
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+a.line-fixed img {
   width: 100%;
   height: 100%;
 }
