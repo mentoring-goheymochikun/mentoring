@@ -1,0 +1,156 @@
+#hurin {
+  @include box(100%,670px,transparent);
+
+  .hurin-inner {
+    @include box(608px,100%,transparent);
+
+    p {
+      @include txt(500,15px,15px,$font-black);
+    }
+
+    .hurin-contents {
+
+      a.hurin {
+        @include box(100%,172px,transparent);
+        display: inline-block;
+        border-bottom: 1px solid $font-black;
+        margin-top: 20px;
+
+        .hurin-top {
+          @include box(100%,47px,transparent);
+          display: flex;
+          position: relative;
+
+          img {
+            width: 36px;
+            height: 36px;
+            margin-right: 10px;
+            border-radius: 30px;
+          }
+
+          .name {
+            @include box(243px,28px,transparent);
+
+            p.name-p {
+              @include txt(500,12px,12px,$font-black);
+            }
+
+            .hurin-star {
+              @include box(100%,11px,transparent);
+              display: flex;
+
+              img {
+                width: 11px;
+                height: 11px;
+                margin-right: 3px;
+              }
+
+              p {
+                @include txt(500,11px,11px,$font-black);                }
+              }
+          }
+
+          p.shurui {
+            @include box(85px,20px,$main-color);
+            @include txt(400,10px,20px,$font-color);
+            border-radius: 15px;
+            text-align: center;
+            padding-top: 3px;
+            position: absolute;
+            right: 0;
+          }
+        }
+
+        .hurin-bottom {
+          @include box(100%,164px,transparent);
+          display: flex;
+
+          .description {
+            @include box(367px,100%,transparent);
+
+            p {
+              width: 100%;
+              @include txt(500,14px,23px,$font-black);
+            }
+
+            .price {
+              display: flex;
+              margin-top: 20px;
+
+              img {
+                width: 25px;
+                height: 24px;
+                margin-right: 5px;
+              }
+
+              p {
+                @include txt(600,16px,16px,$main-color);
+              }
+            }
+          }
+
+          .hurin-img {
+            @include box(241px,100%,transparent);
+            position: relative;
+
+            img {
+              width: 135px;
+              height: 99px;
+              position: absolute;
+              right: 0;
+              border: 10px;
+              border-radius: 20px;
+            }
+
+            .heart {
+              @include box(52px,52px,#ffffff);
+              border-radius: 30px;
+              position: absolute;
+              top: 50px;
+              right: -10px;
+
+              img {
+                width: 40px;
+                height: 40px;
+                padding-top: 5px;
+                padding-right: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .hurin-more-background {
+      width: 100%;
+
+      a.hurin-more {
+        @include box(498px,44px,$more-color);
+        margin: 30px 55px 0;
+        border-radius: 50px;
+        display: inline-block;
+        text-align: center;
+
+        .more {
+          width: 200px;
+          padding-top: 15px;
+          display: flex;
+          margin: 0 auto;
+          position: relative;
+
+          p {
+            @include txt(500,14px,14px,$font-black);
+            width: 200px;
+            margin: 0 auto;
+          }
+
+          img {
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
