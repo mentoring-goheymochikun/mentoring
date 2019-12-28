@@ -1,0 +1,10 @@
+a.line-fixed {
+  @include box(70px,70px,transparent);
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
