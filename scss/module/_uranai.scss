@@ -1,0 +1,51 @@
+#uranai {
+  @include box(100%,170px,#ffffff);
+  opacity: 0;
+  .uranai-inner {
+    @include box(608px,100%,#ffffff);
+
+
+    p {
+      @include txt(500,15px,15px,$font-black);
+    }
+
+    .uranai-contents {
+      @include box(943px,114px,#ffffff);
+      overflow-x: auto;
+      display: flex;
+
+      a.uranaishi {
+        @include box(70px,114px,#ffffff);
+        margin-right: 5px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        img {
+          @include box(70px,70px,#ffffff);
+          border-radius: 35px;
+        }
+
+        p {
+          @include txt(500,11px,11px,$font-black);
+          margin-top: 3px;
+        }
+
+        .star {
+          @include box(70px,19px,$more-color);
+          border-radius: 10px;
+
+          img {
+            @include box(11px,10px,transparent);
+            margin-right: 2px;
+          }
+
+          p {
+            @include txt(500,11px,11px,$font-black);
+          }
+        }
+      }
+    }
+  }
+}
