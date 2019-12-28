@@ -1,0 +1,20 @@
+.slide {
+  @include box(100%,290px,transparent);
+  padding-top: 59px;
+
+  ul {
+    display: flex;
+    width: 300%;
+    overflow: hidden;
+
+    li {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+//.slideここまで
