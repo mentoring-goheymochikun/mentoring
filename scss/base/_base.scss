@@ -1,11 +1,15 @@
 body {
-  width: 640px;
-  margin: 0 auto;
+  width: 100%;
+  //width: 100%;
+  margin: 0;
+  //↑消す
   font-family: $font-family;
 
   .wrap {
-    width: 100%;
-    margin: 0;
+    position: relative;
+    width: 640px;
+    //width: 640px;
+    margin: 0 auto;
     padding: 0;
     //はみ出た部分を隠す
     overflow: hidden;
