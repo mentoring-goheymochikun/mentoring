@@ -1,0 +1,76 @@
+#category {
+  @include box(100%,628px,transparent);
+
+  .category-inner {
+    @include box(620px,auto,transparent);
+
+    p {
+      @include txt(500,15px,15px,$font-black);
+    }
+
+    .img-top {
+      @include box(100%,144px,transparent);
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+
+      p:first-of-type {
+        width: 84px;
+        @include txt(500,20px,20px,$font-color);
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        //真ん中にするためにwidth半分ずらします
+        margin-left: -42px;
+      }
+
+      p:last-of-type {
+        width: 284px;
+        @include txt(500,14px,20px,$font-color);
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        margin-left: -142px;
+      }
+    }
+
+    .img-bottom {
+      @include box(100%,412px,transparent);
+
+      .two-img {
+        display: flex;
+
+        .hukuen {
+          @include box(304px,91px,transparent);
+          margin-top: 20px;
+          margin-right: auto;
+          position: relative;
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+
+          p {
+            @include box(42px,20px,transparent);
+            @include txt(500,20px,20px,$font-color);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -10px;
+            margin-left: -21px;
+          }
+        }
+      }
+    }
+  }
+}
