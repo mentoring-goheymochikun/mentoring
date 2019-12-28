@@ -1,11 +1,17 @@
 header {
-  @include box(100%,59px,$main-color);
+  @include box(640px,59px,$main-color);
+  display: inline-block;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 
   .header-wrap{
     @include box(608px,100%,transparent);
     display: flex;
     margin: 0 auto;
     padding-top: 20px;
+    position: relative;
 
     a.header-logo {
       @include box(78px,26px,transparent);
@@ -21,7 +27,9 @@ header {
     a.header-right {
       @include box(20px,22px,transparent);
       display: inline-block;
-      margin-left: auto;
+      position: absolute;
+      right: 0;
+      top: 20px;
 
       img {
         width: 100%;
